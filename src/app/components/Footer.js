@@ -16,7 +16,7 @@ const Footer = (className) => {
                 <div className="grid grid-cols-2 w-full py-4">
                     <div className="flex flex-col items-start">
                         <p className="text-xl font-bold mb-2">Descubre</p>
-                        <a>Blog</a>
+                        <a href="/blog">Blog</a>
                         <a>Sobre nosotros</a>
                         <a>Únete al equipo</a>
                     </div>
