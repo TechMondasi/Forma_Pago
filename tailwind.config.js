@@ -1,3 +1,5 @@
+const { Poppins } = require('next/font/google');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,6 +17,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-inter)'],
         montserrat: ['var(--font-montserrat)'],
+        Poppins: ['var(--font-poppins)'],
       },
     },
   },
