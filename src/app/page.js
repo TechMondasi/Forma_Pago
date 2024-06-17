@@ -17,6 +17,7 @@ export default function Home() {
             // target="_blank"
             rel="noopener noreferrer"
           >
+            <div></div>
             <Image
               src="/mondasi-logo.png"
               alt="Vercel Logo"
