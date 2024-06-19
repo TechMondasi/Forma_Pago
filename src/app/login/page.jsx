@@ -68,12 +68,12 @@ export default function Home() {
           </div>
 
           <p className="text-white font-bold text-sm mt-4 mb-10">
-            ¿Ya tienes una cuenta?
+            ¿Aun no tienes una cuenta?
             <a
-              href="/login"
+              href="/register"
               className="text-purple-500 hover:text-purple-700 font-bold ml-1"
             >
-              Inicia sesión
+              Crea una
             </a>
           </p>
         </form>
