@@ -36,9 +36,7 @@ export default function Home() {
                         </div>
 
                     </div>
-                    <div className="mb-4">
-
-                    </div>
+                   
                     <div className="mb-4">
                         <label className="block text-white text-lg font-bold mb-2" htmlFor="email">
                             Correo Electrónico
@@ -51,6 +49,7 @@ export default function Home() {
                             required={true}
                         />
                     </div>
+                    {/* ssss */}
                     <div className="mb-6 relative">
                         <label className="block text-white text-lg font-bold mb-2" htmlFor="password">
                             Contraseña
