@@ -30,15 +30,22 @@ export default function Home() {
       <div id="root"></div>
 
       <div className="grid grid-cols-2 w-2/3 text-center align-middle items-center gap-8">
-        <CustomButtonExample>
-          
-        </CustomButtonExample>
+        <CustomButtonExample></CustomButtonExample>
+        <CustomButtonExample></CustomButtonExample>
 
-        <button className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20">
+        {/* <button className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20">
           <p>Viernes 5pm</p>
           <p className="text-lg opacity-50">1h 30min</p>
-        </button>
+        </button> */}
       </div>
+        <div className="my-10">
+          <a
+            href="piloto/piloto-register"
+            className="block bg-purple-600 px-8 py-4 text-lg rounded-full font-semibold text-white text-center hover:bg-purple-700 "
+          >
+            Formulario de registro
+          </a>
+        </div>
       <Footer className={""} />
     </main>
   );
