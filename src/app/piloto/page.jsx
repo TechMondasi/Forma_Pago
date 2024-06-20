@@ -2,7 +2,7 @@
 
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
-import CalendlyWidget from "../components/CalendlyWidget";
+import CustomButtonExample from "../components/CalendlyWidget";
 
 export default function Home() {
   return (
@@ -30,16 +30,15 @@ export default function Home() {
       <div id="root"></div>
 
       <div className="grid grid-cols-2 w-2/3 text-center align-middle items-center gap-8">
-        <button className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20">
-          <p>Martes 5pm</p>
-          <p className="text-lg opacity-50">1h 30min</p>
-        </button>
+        <CustomButtonExample>
+          
+        </CustomButtonExample>
+
         <button className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20">
           <p>Viernes 5pm</p>
           <p className="text-lg opacity-50">1h 30min</p>
         </button>
       </div>
-      <CalendlyWidget></CalendlyWidget>
       <Footer className={""} />
     </main>
   );

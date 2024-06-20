@@ -7,18 +7,23 @@ class CustomButtonExample extends React.Component {
 
     this.state = {
       isOpen: false,
+      rootElement: null,
     };
+  }
+
+  componentDidMount(){
+    this.setState({rootElement:document.getElementById("root")});
   }
 
   render() {
     return (
       <div>
         <button
-          style={{ display: "block", margin: "0 auto" }}
+          
           onClick={() => this.setState({ isOpen: true })}
-          className="bg-purple-600 px-8 py-4 text-lg rounded-full font-semibold"
+          className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20"
         >
-          Custom Button
+          Agende su cita gratis!
         </button>
         <PopupModal
           url="https://calendly.com/edinrandal98"
@@ -27,7 +32,7 @@ class CustomButtonExample extends React.Component {
           prefill={this.props.prefill}
           onModalClose={() => this.setState({ isOpen: false })}
           open={this.state.isOpen}
-          rootElement={document.getElementById("root")}
+          rootElement={this.state.rootElement}
         />
       </div>
     );
