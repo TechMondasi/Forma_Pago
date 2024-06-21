@@ -29,8 +29,7 @@ export default function Home() {
 
       <div id="root"></div>
 
-      <div className="grid grid-cols-2 w-2/3 text-center align-middle items-center gap-8">
-        <CustomButtonExample></CustomButtonExample>
+      <div className="grid grid-cols-1 w-1/3 text-center align-middle items-center gap-8">
         <CustomButtonExample></CustomButtonExample>
 
         {/* <button className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20">
@@ -38,14 +37,26 @@ export default function Home() {
           <p className="text-lg opacity-50">1h 30min</p>
         </button> */}
       </div>
-        <div className="my-10">
-          <a
-            href="piloto/piloto-register"
-            className="block bg-purple-600 px-8 py-4 text-lg rounded-full font-semibold text-white text-center hover:bg-purple-700 "
-          >
-            Formulario de registro
-          </a>
+      <div className="my-10">
+        <a
+          href="piloto/piloto-register"
+          className="block bg-purple-600 px-8 py-4 text-lg rounded-full font-semibold text-white text-center hover:bg-purple-700 "
+        >
+          Formulario de registro
+        </a>
+      </div>
+
+      <div className="relative flex items-center justify-center px-4 sm:px-12 my-12 text-center font-sans z-[-1]">
+        <div>
+          <p className="text-2xl sm:text-5xl font-medium">¡Gracias, Usuario registrado!</p>
+          <p className="text-2xl sm:text-2xl font-medium mt-5">
+            <span className="text-purple-500">
+              Recibirás un email de confirmación en breve.
+            </span>
+          </p>
         </div>
+      </div>
+
       <Footer className={""} />
     </main>
   );

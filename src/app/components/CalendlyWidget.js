@@ -25,7 +25,7 @@ class CustomButtonExample extends React.Component {
           onClick={() => this.setState({ isOpen: true })}
           className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20"
         >
-          Cita gratis!!
+          Seleccione el día y hora para su prueba
         </button>
         <PopupModal
           url="https://calendly.com/edinrandal98"

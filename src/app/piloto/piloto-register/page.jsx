@@ -2,6 +2,7 @@
 
 import Header from "@/app/components/Header";
 import CampoTexto from "@/app/components/formulario";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
@@ -18,7 +19,7 @@ export default function Home() {
         </p>
       </div>
 
-      <form className="shadow-md rounded-3xl px-8 pt-6 mb-20 border-purple-600 border-solid border-2">
+      <form className="shadow-md rounded-3xl px-8 pt-6 mb-20 border-purple-600 border-solid border-2 w-full max-w-lg">
         <div className="display-flex w-full text-center text-4xl mb-8">
           <h1>Información del estudiante</h1>
         </div>
@@ -35,30 +36,8 @@ export default function Home() {
 
         <CampoTexto
           id="studentName"
-          titulo="Nombre del estudiante"
+          titulo="Nombre completo del estudiante"
           placeholder="Nombre del estudiante"
-          required={true}
-        />
-
-        <CampoTexto
-          id="email"
-          titulo="Correo del estudiante"
-          placeholder="ejemplo@correo.com"
-          type="email"
-          required={true}
-        />
-
-        <CampoTexto
-          id="number"
-          titulo="Número de telefono"
-          placeholder="1111111111"
-          required={true}
-        />
-
-        <CampoTexto
-          id="checkboxSMS"
-          titulo="Quiero recibir un recordatorio por SMS 24 horas antes de que comience esta sesión"
-          type="checkbox"
           required={true}
         />
 
@@ -75,6 +54,51 @@ export default function Home() {
           placeholder="Nombre del tutor"
           required={true}
         />
+
+        <CampoTexto
+          id="email"
+          titulo="Correo del tutor"
+          placeholder="ejemplo@correo.com"
+          type="email"
+          required={true}
+        />
+
+        <CampoTexto
+          id="number"
+          titulo="Número de telefono"
+          placeholder="33-10101010"
+          required={true}
+        />
+
+        <CampoTexto
+          id="checkboxSMS"
+          titulo="Quiero recibir un recordatorio por SMS 24 horas antes de que comience esta sesión"
+          type="checkbox"
+          required={true}
+        />
+
+        <CampoTexto
+          id="feedback"
+          titulo="Por favor comparte cualquier duda o informacion adicional"
+          placeholder="Escriba su duda o comentario"
+          required={false}
+        />
+
+        <CampoTexto
+          id="code"
+          titulo="Código de referido"
+          placeholder="Código de referido"
+          required={false}
+        />
+
+        <div className="flex justify-center mt-8 mb-4">
+          <button
+            type="submit"
+            className="w-full max-w-md bg-purple-600 px-8 py-4 text-lg rounded-full font-semibold text-white text-center hover:bg-purple-700"
+          >
+            Enviar
+          </button>
+        </div>
       </form>
     </main>
   );
