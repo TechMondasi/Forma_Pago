@@ -20,7 +20,7 @@ const Footer = ({ className }) => { // Desestructurar props correctamente
                 <div className="grid grid-cols-2 w-full">
                     <div className="flex flex-col gap-2 items-start">
                         <p className="text-2xl font-bold">Descubre</p>
-                        <a href="#" className="text-lg font-light">Blog</a>
+                        <a href="/blog" className="text-lg font-light">Blog</a>
                         <a href="#" className="text-lg font-light">Sobre nosotros</a>
                         <a href="#" className="text-lg font-light">Únete al equipo</a>
                     </div>

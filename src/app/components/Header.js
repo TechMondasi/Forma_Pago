@@ -29,7 +29,10 @@ const Header = () => {
           <code className="font-mono font-bold">src/app/page.js</code>
         </p> */}
         <div className="flex flex-grow justify-end gap-4">
-            <a href='/piloto' className="bg-purple-600 px-8 py-4 text-lg rounded-full font-semibold">
+            <a href='/escuelas' className="px-8 py-4 text-lg rounded-full font-semibold hover:bg-purple-600 transition ease-in delay-80 hover:scale-110">
+                Escuelas
+            </a>
+            <a href='/piloto' className="px-8 py-4 text-lg rounded-full font-semibold hover:bg-purple-600 transition ease-in delay-80 hover:scale-110">
                 Prueba Gratis
             </a>
             <a href='/login' className="login">
@@ -37,6 +40,7 @@ const Header = () => {
             </a>
 
         </div>
+
     </div>)
 }
 
