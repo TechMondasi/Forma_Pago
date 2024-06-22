@@ -11,8 +11,8 @@ export default function Home() {
       <Header />
       <div className="relative flex items-center justify-center px-4 sm:px-12 my-12 text-center font-sans z-[-1]">
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="h-[300px] sm:h-[360px] w-full sm:w-[480px] rounded-full bg-gradient-radial from-white to-transparent blur-2xl dark:bg-gradient-to-br dark:from-transparent dark:to-blue-700 dark:opacity-10"></div>
-          <div className="h-[180px] sm:h-[240px] w-full sm:w-[240px] bg-gradient-conic from-sky-200 via-blue-200 blur-2xl dark:from-sky-900 dark:via-[#0141ff] dark:opacity-40"></div>
+          <div className="h-[200px] sm:h-[300px] w-full sm:w-[480px] rounded-full bg-gradient-radial from-white to-transparent blur-2xl dark:bg-gradient-to-br dark:from-transparent dark:to-blue-700 dark:opacity-10"></div>
+          <div className="h-[120px] sm:h-[180px] w-full sm:w-[240px] bg-gradient-conic from-sky-200 via-blue-200 blur-2xl dark:from-sky-900 dark:via-[#0141ff] dark:opacity-40"></div>
         </div>
         <p className="text-4xl sm:text-7xl font-bold">
           Experimenta el poder de{" "}
@@ -20,10 +20,10 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="w-full max-w-md mx-auto mt-8">
-        <form className="shadow-md rounded-3xl px-8 pt-6 mb-20 border-purple-600 border-solid border-2">
-          <div className="display-flex w-full text-center text-4xl mb-8">
-            <h1>Inicia sesion</h1>
+      <div className="w-full max-w-md mx-auto mt-8 px-4 sm:px-8">
+        <form className="shadow-md rounded-3xl px-8 pt-6 mb-20 border-purple-600 border-solid border-2 bg-white dark:bg-black">
+          <div className="text-center text-3xl sm:text-4xl mb-8">
+            <h1>Inicia sesión</h1>
           </div>
 
           <CampoTexto
@@ -51,9 +51,9 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mb-4">
             <button
-              className="flex items-center bg-white border border-gray-300 hover:bg-gray-100 text-gray-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="flex items-center bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               <Image
@@ -67,7 +67,7 @@ export default function Home() {
             </button>
           </div>
 
-          <p className="text-white font-bold text-sm mt-4 mb-10">
+          <p className="text-gray-700 dark:text-gray-300 text-sm mt-4 mb-10">
             ¿Aun no tienes una cuenta?
             <a
               href="/register"

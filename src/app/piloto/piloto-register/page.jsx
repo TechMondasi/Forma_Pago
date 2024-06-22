@@ -18,8 +18,8 @@ export default function Home() {
           <span className="text-purple-500">Mondasi</span>
         </p>
       </div>
-
-      <form className="shadow-md rounded-3xl px-8 pt-6 mb-20 border-purple-600 border-solid border-2 w-full max-w-lg">
+      <div className="w-full max-w-md mx-auto mt-8 px-4 sm:px-8">
+      <form className="shadow-md rounded-3xl px-8 pt-6 mb-20 border-purple-600 border-solid border-2 bg-white dark:bg-black">
         <div className="display-flex w-full text-center text-4xl mb-8">
           <h1>Información del estudiante</h1>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
 
         <CampoTexto
           id="number"
-          titulo="Número de telefono"
+          titulo="Número de teléfono"
           placeholder="33-10101010"
           required={true}
         />
@@ -74,12 +74,12 @@ export default function Home() {
           id="checkboxSMS"
           titulo="Quiero recibir un recordatorio por SMS 24 horas antes de que comience esta sesión"
           type="checkbox"
-          required={true}
+          required={false}
         />
 
         <CampoTexto
           id="feedback"
-          titulo="Por favor comparte cualquier duda o informacion adicional"
+          titulo="Por favor comparte cualquier duda o información adicional"
           placeholder="Escriba su duda o comentario"
           required={false}
         />
@@ -100,6 +100,7 @@ export default function Home() {
           </button>
         </div>
       </form>
+      </div>
     </main>
   );
 }

@@ -9,8 +9,12 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
 
-      <div className="px-12 my-12 text-center bg-center items-center justify-center font-sans relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <p className="text-7xl font-bold">
+      <div className="relative flex items-center justify-center px-4 sm:px-12 my-12 text-center font-sans z-[-1]">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="h-[300px] sm:h-[360px] w-full sm:w-[480px] rounded-full bg-gradient-radial from-white to-transparent blur-2xl dark:bg-gradient-to-br dark:from-transparent dark:to-blue-700 dark:opacity-10"></div>
+          <div className="h-[180px] sm:h-[240px] w-full sm:w-[240px] bg-gradient-conic from-sky-200 via-blue-200 blur-2xl dark:from-sky-900 dark:via-[#0141ff] dark:opacity-40"></div>
+        </div>
+        <p className="text-4xl sm:text-7xl font-bold">
           Experimenta el poder de{" "}
           <span className="text-purple-500">Mondasi</span>
         </p>
@@ -29,18 +33,21 @@ export default function Home() {
 
       <div id="root"></div>
 
-      <div className="grid grid-cols-1 w-1/3 text-center align-middle items-center gap-8">
-        <CustomButtonExample></CustomButtonExample>
+      <div className="grid grid-cols-1 w-full max-w-md text-center align-middle items-center gap-8 px-4 sm:px-0">
+        <CustomButtonExample />
 
-        {/* <button className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20">
+        {/* 
+        // Código comentado para futuros botones adicionales
+        <button className="text-2xl border-purple-600 w-full h-48 my-8 border-solid border-2 rounded-2xl hover:bg-slate-400/20">
           <p>Viernes 5pm</p>
           <p className="text-lg opacity-50">1h 30min</p>
-        </button> */}
+        </button> 
+        */}
       </div>
       <div className="my-10">
         <a
           href="piloto/piloto-register"
-          className="block bg-purple-600 px-8 py-4 text-lg rounded-full font-semibold text-white text-center hover:bg-purple-700 "
+          className="block bg-purple-600 px-8 py-4 text-lg rounded-full font-semibold text-white text-center hover:bg-purple-700"
         >
           Formulario de registro
         </a>
@@ -57,7 +64,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer className={""} />
+      <Footer />
     </main>
   );
 }

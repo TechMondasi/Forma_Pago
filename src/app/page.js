@@ -1,4 +1,3 @@
-
 import { UserGroupIcon, RocketLaunchIcon, PuzzlePieceIcon, LightBulbIcon } from '@heroicons/react/24/outline'
 import CollapsibleSection from "@/app/components/Collapsible";
 import PaymentCard from "@/app/components/PaymentCard";

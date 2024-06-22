@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function CampoTexto(props) {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  
+
   const togglePasswordVisibility = () => {
     setIsPasswordVisible(!isPasswordVisible);
   };
@@ -12,7 +12,7 @@ export default function CampoTexto(props) {
 
   return (
     <div className="mb-4 relative">
-      <label className="block text-white text-lg font-bold mb-2" htmlFor={props.id}>
+      <label className="block text-gray-700 dark:text-gray-300 text-lg font-bold mb-2" htmlFor={props.id}>
         {props.titulo}
       </label>
       {props.type === "checkbox" ? (
@@ -25,7 +25,7 @@ export default function CampoTexto(props) {
       ) : (
         <>
           <input
-            className="appearance-none border-b-2 border-purple-500 w-full py-2 px-3 leading-tight focus:outline-none focus:border-purple-700 bg-transparent text-white"
+            className="appearance-none border-b-2 border-purple-500 w-full py-2 px-3 leading-tight focus:outline-none focus:border-purple-700 bg-transparent text-gray-700 dark:text-gray-300"
             id={props.id}
             type={props.type === "password" && isPasswordVisible ? "text" : props.type}
             placeholder={placeHolder}
