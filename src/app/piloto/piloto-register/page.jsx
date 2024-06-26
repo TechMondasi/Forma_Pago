@@ -1,7 +1,7 @@
 "use client";
 
-import Header from "@/app/components/Header";
-import CampoTexto from "@/app/components/formulario";
+import Header from "@/components/Header";
+import CampoTexto from "@/components/formulario";
 
 export default function Home() {
   return (

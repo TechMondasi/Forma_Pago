@@ -1,8 +1,8 @@
 "use client";
 
-import Footer from "@/app/components/Footer";
-import Header from "@/app/components/Header";
-import CustomButtonExample from "../components/CalendlyWidget";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import CustomButtonExample from "../../components/CalendlyWidget";
 
 export default function Home() {
   return (
