@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/components/formulario/ButtonGoogle.jsx", "src/components/formulario/ButtonGoogle.jsx", "src/app/api/auth/[...nextauth].ts"  ],
   "exclude": [
     "node_modules"
   ]
