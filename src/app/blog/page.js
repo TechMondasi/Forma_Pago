@@ -1,13 +1,11 @@
 "use client";
 
-import Footer from "@/app/components/Footer";
-import Header from "../components/Header";
+import Footer from "../../components/Footer";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <Header />
 
       <div className="relative flex flex-col items-center justify-center px-4 sm:px-12 my-12 text-center font-sans z-[-1]">
         <div className="absolute inset-0 flex items-center justify-center">

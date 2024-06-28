@@ -1,15 +1,15 @@
 import { UserGroupIcon, RocketLaunchIcon, PuzzlePieceIcon, LightBulbIcon } from '@heroicons/react/24/outline'
-import CollapsibleSection from "@/app/components/Collapsible";
-import PaymentCard from "@/app/components/PaymentCard";
-import Footer from "@/app/components/Footer";
-import Header from '@/app/components/Header';
+import CollapsibleSection from "../components/Collapsible";
+import PaymentCard from "../components/PaymentCard";
+import Footer from "../components/Footer";
+
+
 
 export default function Home() {
   return (
     /* INICIO HEADER */
     <main className="flex min-h-screen flex-col items-center justify-between">
 
-      <Header />
       {/* FIN HEADER */}
 
       <div className="relative flex items-center justify-center px-4 sm:px-12 my-12 text-center font-sans z-[-1]">
